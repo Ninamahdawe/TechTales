@@ -1,8 +1,10 @@
 // MODELS/Comments.js
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
-const User = require('./User');
-const Project = require('./Project');
+// const { Model, DataTypes } = require('sequelize');
+// const sequelize = require('../config/connection');
+// const User = require('./User');
+
+
+// const Project = require('./Project');
 class Comment extends Model { }
 
 Comment.init(
