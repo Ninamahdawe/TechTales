@@ -1,6 +1,6 @@
 // MODELS/Comments.js
-// const { Model, DataTypes } = require('sequelize');
-// const sequelize = require('../config/connection');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 // const User = require('./User');
 
 
@@ -58,4 +58,4 @@ Comment.belongsTo(Project, {
     foreignKey: 'project_id',
 });
 
-// module.exports = Comment;
+module.exports = Comment;
