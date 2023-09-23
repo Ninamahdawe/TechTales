@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-const User = require('./User');
+// const User = require('./User');
 
 class Project extends Model { }
 
@@ -17,11 +17,15 @@ Project.init(
             allowNull: false,
         },
         description: {
-            type: DataTypes.TEXT,
+            type: DataTypes.STRING,
+        },
+        date_created: {
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: DataTypes.NOW,
         },
         user_id: {
             type: DataTypes.INTEGER,
-            allowNull: false,
             references: {
                 model: 'user',
                 key: 'id',
@@ -36,10 +40,5 @@ Project.init(
         modelName: 'project',
     }
 );
-
-// Define associations
-Project.belongsTo(User, {
-    foreignKey: 'user_id',
-});
 
 module.exports = Project;
