@@ -1,22 +1,20 @@
-const express = require('express');
-const router = express.Router();
+const router = require('express').Router();
 const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
     try {
-        const { text, project_id } = req.body;
-        const { user_id } = req.session;
+        console.log("Request body:", req.body);
 
         const newComment = await Comment.create({
-            text,
-            user_id,
-            project_id,
+            text: req.body.text,
+            user_id: req.session.user_id,
+            project_id: req.body.project_id,
         });
 
         res.status(200).json(newComment);
     } catch (err) {
-        console.error("Error while creating comment:", err);
+        console.error("Error when  creating comment:", err);
         res.status(400).json(err);
     }
 });
