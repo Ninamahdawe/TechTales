@@ -18,5 +18,5 @@ router.post('/', withAuth, async (req, res) => {
         res.status(400).json(err);
     }
 });
-
+// router.get('/:post_id')
 module.exports = router;
