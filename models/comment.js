@@ -50,12 +50,12 @@ Comment.init(
     }
 );
 
-Comment.belongsTo(User, {
-    foreignKey: 'user_id',
-});
+// Comment.belongsTo(User, {
+//     foreignKey: 'user_id',
+// });
 
-Comment.belongsTo(Project, {
-    foreignKey: 'project_id',
-});
+// Comment.belongsTo(Project, {
+//     foreignKey: 'project_id',
+// });
 
 module.exports = Comment;

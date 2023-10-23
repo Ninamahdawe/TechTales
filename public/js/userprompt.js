@@ -1,4 +1,4 @@
-// let loggedIn = loggedIn || false;
+// var loggedIn = loggedIn || false;
 const SHOW_LOGIN_PROMPT_AFTER = 2 * 60 * 1000;
 function isUserLoggedIn() {
     return loggedIn;

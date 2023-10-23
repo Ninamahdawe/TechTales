@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Project, User } = require('../models');
+const { Project, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 // Define your home route
@@ -31,6 +31,16 @@ router.get('/project/:id', async (req, res) => {
         const projectData = await Project.findByPk(req.params.id, {
             include: [
                 {
+                    model: Comment,
+                    include: [
+                        {
+                            model: User,
+                            attributes: ['name'],
+                        },
+                    ]
+                },
+
+                {
                     model: User,
                     attributes: ['name'],
                 },
@@ -38,12 +48,13 @@ router.get('/project/:id', async (req, res) => {
         });
 
         const project = projectData.get({ plain: true });
-
+        console.log(project);
         res.render('project', {
             ...project,
             logged_in: req.session.logged_in
         });
     } catch (err) {
+        console.log(err)
         res.status(500).json(err);
     }
 });

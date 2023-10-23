@@ -14,6 +14,15 @@
     <textarea id="commentText"></textarea>
     <button id="submitComment">Submit</button>
 </form>
+<div id="comment-section"> 
+{{#each comments as |comment|}}
+    <div>
+        <h5>{{comment.text}}</h5>
+        <h6>{{comment.date_created}}</h6>
+        <p>Comment Created by : {{comment.user.name}}</p>
+    </div>
+{{/each}}
+</div>
 
 
 <script src="/js/project.js"></script>

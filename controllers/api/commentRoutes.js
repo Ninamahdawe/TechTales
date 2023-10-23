@@ -11,7 +11,6 @@ router.post('/', withAuth, async (req, res) => {
             user_id: req.session.user_id,
             project_id: req.body.project_id,
         });
-
         res.status(200).json(newComment);
     } catch (err) {
         console.error("Error when  creating comment:", err);
