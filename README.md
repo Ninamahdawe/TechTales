@@ -21,4 +21,5 @@ Heroku: A cloud platform for deploying web applications.
 - Clone the Repository:
 
 git clone https://github.com/Ninamahdawe/TechTales
+
 cd TechTales
