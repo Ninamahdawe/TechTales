@@ -23,3 +23,7 @@ Heroku: A cloud platform for deploying web applications.
 git clone https://github.com/Ninamahdawe/TechTales
 
 cd TechTales
+
+- Install Dependencies:
+
+npm install
