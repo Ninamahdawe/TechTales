@@ -24,7 +24,7 @@
 // // Call the seedDatabase function
 // seedDatabase();
 const sequelize = require('../config/connection');
-const { User, Project } = require('../models');
+const { User, Project, Comment } = require('../models');
 
 const userData = require('./userData.json');
 const projectData = require('./projectData.json');
