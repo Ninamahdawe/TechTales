@@ -16,3 +16,9 @@ Welcome to TechTales! communicating about technology is essential for software d
 - Sequelize: A promise-based Node.js ORM for  MySQL,
 - express-session: A session middleware for Express.js.
 Heroku: A cloud platform for deploying web applications.
+
+## Getting Started
+- Clone the Repository:
+
+git clone git@github.com:Ninamahdawe/TechTales.git
+cd TechTales
