@@ -32,3 +32,7 @@ npm install
 
 Create a PostgreSQL database.
 Update the database configuration in config/config.js to match your database settings.
+
+- Environment Variables:
+
+Create a .env file in the project root and add the following variables:
