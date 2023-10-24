@@ -27,3 +27,8 @@ cd TechTales
 - Install Dependencies:
 
 npm install
+
+- Database Configuration:
+
+Create a PostgreSQL database.
+Update the database configuration in config/config.js to match your database settings.
