@@ -44,3 +44,7 @@ DB_USER=your_db_user
 DB_PASSWORD=your_db_password
 
 SESSION_SECRET=your_session_secret
+
+- Start the Application:
+
+npm start
