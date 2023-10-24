@@ -48,3 +48,16 @@ SESSION_SECRET=your_session_secret
 - Start the Application:
 
 npm start
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[License Details](https://opensource.org/licenses/MIT)
+
+## Github
+
+https://github.com/Ninamahdawe
+
+## deployed page
+
+https://fast-plateau-85352-b12827c628f9.herokuapp.com/
+
