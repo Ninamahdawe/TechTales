@@ -1,6 +1,17 @@
 # TechTales
 Welcome to TechTales! communicating about technology is essential for software developers. They often research, document, and share their knowledge and experiences with the broader tech community. The Tech Blog project provides a platform for developers to publish blog posts and engage in discussions with their peers.
 
+## Table of Contents
+
+- [Features ](#Features)
+- [Technologies ](#Technologis)
+- [Getting Started](#getting-started)
+- [Configuration](#Configuration)
+- [License](#license)
+- [Github](#Github)
+- [deployed page](#deployedpage)
+
+
 ## Features
 - User Authentication: Secure user registration and login functionality.
 - User Profiles: Users can create and edit their profiles.
@@ -28,7 +39,7 @@ cd TechTales
 
 npm install
 
-- Database Configuration:
+## Configuration:
 
 Create a PostgreSQL database.
 Update the database configuration in config/config.js to match your database settings.
